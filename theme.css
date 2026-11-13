@@ -2088,3 +2088,46 @@ body{background-size:cover!important;background-position:center center!important
 @media (min-width:721px) and (max-width:899px){
   #home .home-xp,#home .home-coins,#home .home-profile-card{width:174px!important}
 }
+
+
+/* Restore the desktop left stack to its original scale and alignment. */
+@media (min-width:721px){
+  #home .home-profile-card{
+    left:0!important;right:auto!important;top:50%!important;bottom:auto!important;
+    transform:translateY(-50%)!important;
+    width:clamp(250px,22vw,310px)!important;
+    max-width:calc(100% - 8px)!important;
+    max-height:none!important;overflow:visible!important;
+    padding:25px 22px 23px!important;
+    border-width:5px!important;border-radius:17px!important;
+    margin:0!important;
+  }
+  #home .home-profile-card .profile-avatar{
+    width:74px!important;height:74px!important;margin:0 auto 14px!important;
+    font-size:43px!important;border-width:4px!important;
+  }
+  #home .home-profile-card .profile-eyebrow{font-size:10px!important;letter-spacing:2px!important}
+  #home .home-profile-card h2{font-size:25px!important;margin:8px 0!important}
+  #home .home-profile-card p{font-size:12px!important;line-height:1.5!important;margin:0 auto 18px!important}
+  #home .home-profile-card .profile-actions{gap:8px!important;margin:0 0 10px!important}
+  #home .home-profile-card .profile-auth-button{min-height:36px!important;padding:8px 10px!important;font-size:12px!important;border-width:3px!important}
+  #home .home-profile-card .profile-customize-button{min-height:36px!important;margin:4px auto 0!important;padding:8px 12px!important;font-size:12px!important;border-width:3px!important}
+
+  #home .home-xp{
+    left:0!important;right:auto!important;top:4.5%!important;bottom:auto!important;
+    width:280px!important;min-width:0!important;max-width:calc(100% - 8px)!important;
+    height:72px!important;padding:8px 17px 8px 70px!important;
+    border-radius:0 24px 24px 0!important;
+  }
+  #home .xp-star{left:-5px!important;width:83px!important;height:83px!important;font-size:37px!important}
+  #home .xp-track{margin-left:9px!important;gap:4px!important}
+  #home .xp-track strong{font-size:26px!important}
+  #home .home-coins{
+    left:2%!important;right:auto!important;top:auto!important;bottom:6.5%!important;
+    width:275px!important;min-width:275px!important;max-width:calc(100% - 8px)!important;
+    height:72px!important;padding:8px 24px 8px 91px!important;
+    border-radius:50px!important;
+  }
+  #home .coin-icon{left:0!important;width:80px!important;height:80px!important;font-size:51px!important;border-width:5px!important}
+  #home .home-coins strong{font-size:35px!important}
+}
