@@ -2213,3 +2213,19 @@ body{background-size:cover!important;background-position:center center!important
   text-align:center!important;
 }
 #game .hint-reveal-board .chalk-spark{z-index:6!important}
+
+
+/* True viewport centering for the desktop home logo and its three main actions. */
+@media (min-width:721px){
+  #home.active{position:relative!important}
+  #home .home-center{position:fixed!important;left:50vw!important;top:50vh!important;transform:translate(-50%,-50%)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;grid-column:auto!important;grid-row:auto!important;width:min(560px,calc(100vw - 48px))!important;max-width:560px!important;max-height:calc(100dvh - 36px)!important;margin:0!important;padding:0!important;z-index:10!important}
+  #home .home-center .game-logo{width:100%;margin:0 auto clamp(14px,2.2vh,24px)!important}
+  #home .home-center .home-menu{width:min(100%,520px)!important;margin:0 auto!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:clamp(9px,1.5vh,14px)!important}
+  #home .home-center .home-menu .menu-action{width:100%!important;margin:0!important}
+}
+@media (min-width:721px) and (max-height:620px){
+  #home .home-center{width:min(440px,calc(100vw - 48px))!important}
+  #home .home-center .game-logo{max-height:20vh;object-fit:contain;margin-bottom:8px!important}
+  #home .home-center .home-menu{gap:7px!important}
+  #home .home-center .home-menu .menu-action{min-height:42px!important}
+}
