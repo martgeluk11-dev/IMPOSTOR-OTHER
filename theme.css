@@ -2131,3 +2131,14 @@ body{background-size:cover!important;background-position:center center!important
   #home .coin-icon{left:0!important;width:80px!important;height:80px!important;font-size:51px!important;border-width:5px!important}
   #home .home-coins strong{font-size:35px!important}
 }
+
+
+/* Keep XP and coins together along the bottom-left on desktop. */
+@media (min-width:721px){
+  #home .home-xp{
+    left:0!important;right:auto!important;top:auto!important;bottom:6.5%!important;
+  }
+  #home .home-coins{
+    left:290px!important;right:auto!important;top:auto!important;bottom:6.5%!important;
+  }
+}
