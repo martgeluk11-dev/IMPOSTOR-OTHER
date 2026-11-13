@@ -2061,3 +2061,30 @@ body{background-size:cover!important;background-position:center center!important
   #home .home-profile-card{max-height:32vh!important;padding:8px!important}
   #home .home-profile-card .profile-avatar{width:36px!important;height:36px!important;font-size:21px!important}
 }
+
+
+/* Desktop home: keep the profile on the right; XP and coins stay flush left. */
+@media (min-width:721px){
+  #home .home-xp{
+    left:0!important;right:auto!important;top:2%!important;bottom:auto!important;
+    width:clamp(190px,18vw,235px)!important;max-width:calc(100% - 8px)!important;
+    margin:0!important;
+  }
+  #home .xp-star{left:0!important}
+  #home .home-coins{
+    left:0!important;right:auto!important;top:auto!important;bottom:2%!important;
+    width:clamp(190px,18vw,235px)!important;min-width:0!important;
+    max-width:calc(100% - 8px)!important;margin:0!important;
+  }
+  #home .coin-icon{left:0!important}
+  #home .home-profile-card{
+    left:auto!important;right:0!important;top:50%!important;bottom:auto!important;
+    transform:translateY(-50%)!important;
+    width:clamp(190px,18vw,235px)!important;
+    max-width:calc(100% - 8px)!important;
+    margin:0!important;
+  }
+}
+@media (min-width:721px) and (max-width:899px){
+  #home .home-xp,#home .home-coins,#home .home-profile-card{width:174px!important}
+}
