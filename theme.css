@@ -1868,3 +1868,63 @@ body{background-size:cover!important;background-position:center center!important
  #game .hint-reveal-board.board-reveal,#game .game-action-panel,#game #submitHint:after{animation:none!important}
  #game .orbit-player{opacity:1!important}
 }
+
+
+/* Desktop home layout: profile on the right, rewards on the left,
+   and the three main actions centered in the viewport. Mobile is untouched. */
+@media (min-width:721px){
+  #home.active{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(420px,620px) minmax(0,1fr);
+    grid-template-rows:minmax(0,1fr);
+    align-items:center;
+    justify-content:stretch;
+    column-gap:clamp(22px,3vw,52px);
+    min-height:calc(100dvh - 76px);
+    height:calc(100dvh - 76px);
+    padding:22px 0!important;
+  }
+  #home .home-center{
+    grid-column:2!important;
+    grid-row:1!important;
+    justify-self:center!important;
+    align-self:center!important;
+    width:100%;
+    max-width:620px;
+    margin:0 auto!important;
+  }
+  #home .home-menu{width:min(100%,560px);margin-inline:auto}
+  #home .home-profile-card{
+    display:block!important;
+    grid-column:3!important;
+    grid-row:1!important;
+    justify-self:end!important;
+    align-self:center!important;
+    width:min(100%,290px);
+    margin:0!important;
+  }
+  #home .home-xp{
+    left:0!important;
+    right:auto!important;
+    top:4.5%!important;
+    max-width:calc(50vw - 24px);
+  }
+  #home .home-coins{
+    left:0!important;
+    right:auto!important;
+    bottom:6.5%!important;
+    max-width:calc(50vw - 24px);
+  }
+  #home .mobile-customize-action{display:none!important}
+  #home .home-sidecard{display:none!important}
+}
+@media (min-width:721px) and (max-width:899px){
+  #home.active{grid-template-columns:minmax(0,1fr);padding:88px 0 92px!important}
+  #home .home-center{grid-column:1!important}
+  #home .home-profile-card{display:none!important}
+  #home .home-xp{width:230px;height:60px;padding-left:58px}
+  #home .xp-star{width:70px;height:70px}
+  #home .xp-track strong{font-size:21px}
+  #home .home-coins{min-width:220px;height:60px;padding-left:76px}
+  #home .coin-icon{width:68px;height:68px}
+}
