@@ -2170,3 +2170,24 @@ body{background-size:cover!important;background-position:center center!important
 #game .hint-reveal-word{position:absolute;left:14%;right:14%;top:36%;min-height:24%;display:grid;place-items:center;text-align:center;overflow-wrap:anywhere}
 #game .hint-reveal-board:not(.is-visible){opacity:1}
 #game .hint-reveal-board .hint-reveal-word{max-width:72%;margin:auto}
+
+
+/* Final desktop placement: XP directly above coins, both at the bottom-left corner. */
+@media (min-width:721px){
+  #home .home-xp{
+    position:fixed!important;
+    left:0!important;right:auto!important;
+    top:auto!important;bottom:88px!important;
+    width:275px!important;min-width:0!important;max-width:min(275px,calc(100vw - 8px))!important;
+    height:72px!important;z-index:40!important;
+    box-sizing:border-box!important;
+  }
+  #home .home-coins{
+    position:fixed!important;
+    left:0!important;right:auto!important;
+    top:auto!important;bottom:8px!important;
+    width:275px!important;min-width:0!important;max-width:min(275px,calc(100vw - 8px))!important;
+    height:72px!important;z-index:40!important;
+    box-sizing:border-box!important;
+  }
+}
