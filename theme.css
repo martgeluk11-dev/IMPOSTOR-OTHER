@@ -2142,3 +2142,22 @@ body{background-size:cover!important;background-position:center center!important
     left:290px!important;right:auto!important;top:auto!important;bottom:6.5%!important;
   }
 }
+
+
+/* Desktop home: pin both reward counters to the actual viewport bottom-left. */
+@media (min-width:721px){
+  #home .home-xp{
+    position:fixed!important;
+    left:45px!important;right:auto!important;
+    top:auto!important;bottom:6.5vh!important;
+    width:275px!important;min-width:0!important;max-width:calc(50vw - 70px)!important;
+    height:72px!important;z-index:30!important;
+  }
+  #home .home-coins{
+    position:fixed!important;
+    left:340px!important;right:auto!important;
+    top:auto!important;bottom:6.5vh!important;
+    width:275px!important;min-width:0!important;max-width:calc(50vw - 365px)!important;
+    height:72px!important;z-index:30!important;
+  }
+}
