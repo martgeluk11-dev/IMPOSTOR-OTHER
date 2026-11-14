@@ -2229,3 +2229,7 @@ body{background-size:cover!important;background-position:center center!important
   #home .home-center .home-menu{gap:7px!important}
   #home .home-center .home-menu .menu-action{min-height:42px!important}
 }
+
+
+/* Keep the secret/category banner above the orbiting top player's card. */
+#game .secret{position:relative!important;z-index:30!important}
